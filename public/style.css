@@ -1,0 +1,89 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 12px;
+    width: 60%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.weather-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.main-stat {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#map {
+    height: 300px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.extras-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.news-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+    .news-item a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: 500;
+    }

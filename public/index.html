@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Global City Dashboard</h1>
+            <div class="search-bar">
+                <input type="text" id="cityInput" placeholder="Enter city (e.g. London)">
+                <button onclick="getDashboardData()">Search</button>
+            </div>
+        </header>
+
+        <section id="weather-section" class="card hidden">
+            <div class="weather-header">
+                <h2 id="city-name">Weather</h2>
+                <img id="w-icon" src="" alt="icon">
+            </div>
+            <div class="weather-grid">
+                <div class="main-stat">
+                    <span id="w-temp">--</span>°C
+                    <p id="w-desc">--</p>
+                </div>
+                <div class="stats">
+                    <p>Feels Like: <span id="w-feels">--</span>°C</p>
+                    <p>Humidity: <span id="w-humidity">--</span>%</p>
+                    <p>Wind: <span id="w-wind">--</span> m/s</p>
+                    <p>Pressure: <span id="w-pressure">--</span> hPa</p>
+                    <p>Rain (3h): <span id="w-rain">--</span> mm</p>
+                    <p>Country: <span id="w-country">--</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="map-section" class="card hidden">
+            <h3>Location Map</h3>
+            <div id="map"></div>
+        </section>
+
+        <div class="extras-grid">
+            <section id="news-section" class="card hidden">
+                <h3>Local News</h3>
+                <div id="news-container"></div>
+            </section>
+
+            <section id="fact-section" class="card hidden">
+                <h3>Random Fact</h3>
+                <p id="fact-text">Loading...</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
